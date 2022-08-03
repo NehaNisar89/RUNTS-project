@@ -1,0 +1,349 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+  /* text-align: center; */
+  overflow-x: hidden;
+  font-family: 'Nunito', sans-serif;
+
+}
+.wrapper{
+  margin: 10px;
+}
+
+header {
+  position: absolute;
+  z-index: 3;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  top:0;
+  }
+  .header-row {
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      
+      align-items: center;
+    }
+    .menu-bar {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+      align-items: center;
+      align-content: center; 
+      list-style: none;
+    }
+    
+      .menu-bar li a {
+      color: #949494;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 10px 20px; 
+      }
+      .menu-bar .menu-active {
+      color:  #E84F92;
+      outline: #E84F92;
+    }
+      .menu-bar .connect {
+      background: black;
+      color: white;
+      border-radius: 30px;
+       
+    }
+
+  
+ .button {
+    background-color: #E84F92; 
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin: 20px;
+    font-family:  'Nunito', sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .image {
+    width: 400px;
+    height: 408.62px;
+   }
+   .hero-heading {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    color: #E84F92;
+    align-items: center;
+    text-align: center;padding: 20px;
+   }
+   .hero-b-heading {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    color: #575757;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+   }
+   .center-heading {
+    text-align: center;
+    font-family:  'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 52px;
+    color: #626262;
+    padding: 20px;
+
+   }
+
+  .heading {
+    text-align: left;
+    font-family:  'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 52px;
+    color: #626262;
+    padding: 20px;
+
+  } 
+  .team-heading {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #4F4F4F;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .team-heading2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4F4F4F;
+    margin-left: 20px;
+  }
+  .team-logo{
+    margin-top: 10px;
+    margin-left: 15px;
+  } 
+  .img-fluid{
+    background-color: #E84F92;
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    background:#E0FFFD;
+    border: 1px solid #FFDCDC;
+    border-radius: 10px;
+    border-spacing: 2px;
+    
+        
+  }
+  .team-card{
+    background-color: white;
+    padding: 30px;
+  }
+  .p-text {
+    text-align: left;
+    font-family:  'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #6E6E6E;
+    padding: 20px;
+  } 
+  .main-accordian {
+      padding: 20px;
+
+  }
+  #hero-section{
+    background-color:  #FFFFFF;
+    text-align: center;
+    margin-top: 120px;  
+  }
+  #about-section {
+    background-color: #DFF1FA;
+    padding: 50px;
+  }
+  #story-section{
+    background-color: #FFFFFF;
+    padding: 50px;
+  } 
+  #adopt-section {
+    background-color: #FFF8EE;
+    padding: 50px;
+  }
+  #team-section {
+   background-color: #FFF5F5;
+   padding: 50px; 
+  }
+  #question-section {
+    background-color: #FFFFFF;
+    padding: 50px;
+  }
+
+  #gallery-section{
+    background-color: #FFFFFF;
+    padding: 50px;
+    border-radius: 10px;
+
+  }
+  .gallery-image {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+  
+
+  .paragragh-text {
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .accordion {
+    color: #626262;
+    padding: 18px;
+    width: 70%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    background: rgba(39, 39, 39, 0.03);
+    border-radius: 16px;
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+  
+  .active, .accordion:hover {
+    background: rgba(39, 39, 39, 0.03);
+    border: 1px solid #E84F92;
+    color: #E84F92;
+    
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 50px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+  
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+    float: left;
+    
+  }
+  .team-card {
+    text-align: left;
+  }
+  .container-fluid {
+    background-color: #251F21;
+    padding: 100px;
+
+  }
+  .line {
+    border: solid 1px #E84F92;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  } 
+  .cta-footer {
+    width: 80%;
+    height: 60px;
+    color: white;
+    font-weight: 700;
+    background: #E84F92;
+    border-radius: 10px;
+  }
+  .text {
+    color:  #E84F92;
+  }
