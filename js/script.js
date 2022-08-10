@@ -5,6 +5,8 @@ $(document).ready(function(){
         autoplay: false,
         centerMode: true,
         centerPadding:'5px',
+        dots: true,
         autoplaySpeed: 2000
     });
+
   });

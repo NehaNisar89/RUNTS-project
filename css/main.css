@@ -56,9 +56,12 @@ header {
   z-index: 3;
   display: block;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 5px;
   padding: 20px;
+  padding-top: 5px;
   top:0;
+  
+
   }
   .header-row {
       z-index: 1;
@@ -114,7 +117,7 @@ header {
   .container {
     position: relative;
     text-align: center;
-    color: white;
+   display: inline-block;
   }
 
   .centered {
@@ -122,12 +125,16 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: inline-block;
+    padding-top: 140px;
   }
+  
 
-  .image {
+
+  /* .image {
     width: 400px;
     height: 408.62px;
-   }
+   } */
    .hero-heading {
     font-family: 'Nunito', sans-serif;
     font-style: normal;
@@ -135,13 +142,15 @@ header {
     font-size: 24px;
     color: #E84F92;
     align-items: center;
-    text-align: center;padding: 20px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0%;
    }
    .hero-b-heading {
     font-family: 'Nunito', sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 64px;
+    font-size: 50px;
     color: #575757;
     align-items: center;
     text-align: center;
@@ -189,21 +198,51 @@ header {
     margin-top: 10px;
     margin-left: 15px;
   } 
+  .slider {
+    background-color: #FFF5F5;
+    padding: 50px;
+   }
+   .slick-next:before, .slick-prev:before {
+    font-family: slick;
+    font-size: 19px;
+    border: white;
+    line-height: 1;
+    opacity: .75;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+   .slick-dots li.slick-active button:before {
+    opacity: 0.4;
+    color:  #E84F92;
+}
+   .slick-dots li button::before {
+    font-family: slick;
+    line-height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    content: "•";
+    text-align: center;
+    opacity: 0.25;
+    color: rgb(0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+}
   .img-fluid{
-    background-color: #E84F92;
-    border-radius: 10px;
     padding: 20px 10px;
     box-sizing: border-box;
     background:#E0FFFD;
     border: 1px solid #FFDCDC;
     border-radius: 10px;
-    border-spacing: 2px;
-    
+    border-spacing: 2px;  
         
   }
   .team-card{
-    background-color: white;
+    background-color:  #FFF5F5;
     padding: 30px;
+    text-align: left;
   }
   .p-text {
     text-align: left;
@@ -255,23 +294,41 @@ header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
+    grid-column-gap: 0px;
+    grid-row-gap: 5px;
+    padding: 50px 150px;
+    text-align: center;
+    
   }
-  
+  .image1 {
+    background: #FFF8EE;;
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border: 1px solid #FFDCDC;
+    border-radius: 10px;
+    border-spacing: 2px;
+    justify-content: center;
+  }
+  .center-button {
+    text-align: center;
+  }
 
   .paragragh-text {
     font-family: 'Nunito', sans-serif;
   }
   
   .accordion {
+    font-family:  'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
     color: #626262;
     padding: 18px;
     width: 70%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
     transition: 0.4s;
     background: rgba(39, 39, 39, 0.03);
     border-radius: 16px;
@@ -299,7 +356,9 @@ header {
   }
   
   .panel {
-    padding: 0 50px;
+    padding: 0.5px;
+    margin-left: 50px;
+    margin-top: 10px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
@@ -323,12 +382,24 @@ header {
     float: left;
     
   }
-  .team-card {
-    text-align: left;
-  }
+.footer-col{
+  padding: 10px;
+}
+.footer-image1 {
+  padding: 50px;
+  /* margin: 30px 100px; */
+  
+}
+.left-img {
+  padding: 50px;
+  margin: -90px -100px;
+  
+}
+
+  
   .container-fluid {
     background-color: #251F21;
-    padding: 100px;
+   padding: 50px;
 
   }
   .line {
@@ -337,13 +408,28 @@ header {
     margin-bottom: 20px;
   } 
   .cta-footer {
-    width: 80%;
+    /* width: 80%;
     height: 60px;
     color: white;
     font-weight: 700;
     background: #E84F92;
+    border-radius: 10px; */
+    background-color: #E84F92; 
     border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin: 20px;
+    font-family:  'Nunito', sans-serif;
   }
   .text {
     color:  #E84F92;
+  
   }
+  
